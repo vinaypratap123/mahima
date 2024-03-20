@@ -1,0 +1,270 @@
+/* Font face for Paralucent */
+@font-face {
+    font-family: 'Paralucent';
+    src: url('path/to/paralucent.woff2') format('woff2'),
+         url('path/to/paralucent.woff') format('woff');
+}
+/* Font face for Barlow */
+@font-face {
+    font-family: 'Barlow';
+    src: url('path/to/barlow.woff2') format('woff2'),
+         url('path/to/barlow.woff') format('woff');
+}
+
+body {
+    font-family: 'Paralucent', sans-serif;
+  }
+.navbar-nav .nav-link {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500; /* Adjust font weight as needed */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color:#FEC619 !important; /* Change color on hover */
+  }
+.navbar-brand img {
+    height: 40px; /* Adjust the height of the logo as needed */
+  }
+  .bg-custom{
+    background-color: #AE4A31;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff; /* Text color for navigation links */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      background-color: #AE4A31; /* Change background color when collapsed */
+    }
+    .navbar-toggler {
+      border-color: #ffffff; /* Change toggler color */
+    }
+    .navbar-nav .nav-link {
+      color: #000000; /* Change text color for navigation links in collapsed mode */
+    }
+  }
+  .header-divider {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #FEC619, #ee5d3c, #ffda69); /* Adjust gradient colors as needed */
+  }
+  .Aboutheading{
+    font-family: 'Paralucent-Light', sans-serif;
+  }
+  .para{
+    font-family: 'Barlow', sans-serif;
+  }
+  .green-text{
+    color:#365B43;
+  }
+  .reduced-height {
+    height: 600px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+
+        /* Background image styling */
+        .background-image {
+            background-image: url('./Images/vi.png'); /* Path to your background image */
+            background-attachment: fixed; /* Ensures the background image stays fixed while scrolling */
+            background-position: center; /* Center the background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            color: white; /* Set text color to white for better readability */
+            padding: 20px; /* Add padding for better spacing */
+        } .vision-height {
+            height: 400px; /* Adjust the height as needed */
+        }
+        
+        /* Card styling */
+        .card {
+            margin-bottom: 20px; /* Add margin between cards */
+                border-radius: 40px; /* Rounded borders */
+                overflow: hidden; /* Hide overflow content */
+                position: relative; /* Relative positioning for absolute child */
+                box-shadow: 0 4px 10px rgba(2, 92, 77, 1); /* Green drop shadow */
+                transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+
+        }
+        .card:hover {
+            background-color: rgba(84, 119, 94, 1); /* Fully opaque green */
+        }
+        
+        .card:hover p {
+            color: white; /* Change text color to white on hover */
+        }
+        .card-img-top {
+            aspect-ratio: 3/2;
+            object-fit:contain;
+
+
+        }
+        .card-text {
+            color: black; /* Set text color for card text */
+        }
+        /* Remove link-like styles from accordion headers */
+.card-header .btn-link {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease; /* Adding transition for smooth effect */
+
+
+}
+.card-header .btn-link:hover,.card-body:hover 
+    {
+    color: white;
+}
+        
+        .nav-link.active {
+            background-color: rgba(84, 119, 94, 1); /* Set background color for active tab link */
+            color: white; /* Set text color for active tab link */
+        }
+        .academic{
+            margin: auto;
+        }
+        .full-width-section {
+            background-color: #E5F4E5; /* Background color */
+            padding: 50px 0; /* Add padding as needed */
+        }
+        
+        .full-width-section .container {
+            margin: auto; /* Remove container margin */
+        }
+        
+        
+        .full-width-section .card-img-top {
+            display: block; /* Ensure image takes full width of card */
+            margin: 0 auto; /* Center image horizontally */
+        }
+        
+        .full-width-section .card-body {
+            text-align: center; /* Center text */
+        }
+        
+        .full-width-section .card-title {
+            margin-top: 20px; /* Add space between image and heading */
+        }
+        .card-title:hover{
+            color:white;
+        }
+
+
+        .full-width-section2 {
+            background-color: #E5F4E5; /* Background color */
+        }
+        @media (max-width: 767px) {
+            .academic .col-md-4 {
+                margin-bottom: 15px; /* Adjust as needed */
+            }
+        }
+        .btn-unstyled {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+            text-align: left; /* Adjust text alignment as needed */
+        }
+        @keyframes slide {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        
+        .logos{
+            overflow:hidden;
+            padding:60px 0;
+            background-color: white;
+            white-space: nowrap;
+            position: relative;
+        }
+        .logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+        .logos:hover .logos-slide{
+            animation-play-state: paused;
+        }
+        
+        .logos-slide {
+            display: flex;
+            flex-wrap: nowrap;
+            animation: 15s slide infinite linear;
+
+        }
+        
+        .logos-slide img{
+            
+            height:250px;
+            margin: 0 40px;
+             /* Ensure each logo item stays on the same line */
+
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, #FF6F61 0%, #FF9B61 100%);
+            color: #fff;
+            border: none;
+            margin: auto;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #FF9B61 0%, #FF6F61 100%);
+        }
+        /* CSS for hover effect */
+/* CSS for  Gallery hover effect */
+.hover-effect {
+    transition: transform 0.3s ease; /* Apply smooth transition */
+}
+
+.hover-effect:hover {
+    transform: scale(.9); /* Scale up the image on hover */
+}
+
+.testimonial {
+    width: 1000px; /* Set the width */
+    height: 300px; /* Set the height */
+    overflow: hidden; /* Hide overflow */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+/* Ensure images maintain aspect ratio */
+.testimonial-image img {
+    max-width: 100%;
+    height: auto;
+}
+.theme-icon {
+    width: 30px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+.rounded-corner {
+    border-radius: 15px; /* Adjust border radius as needed */
+    box-shadow: 0 0 10px  rgba(84, 119, 94, 1); /* Green box shadow */
+}
+
