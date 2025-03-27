@@ -814,7 +814,7 @@
                         <div class="card application-card">
                             <img src="assets/img/fundraising/IOTA.png" class="card-img-top" alt="IOTA">
                             <div class="card-body">
-                                <h5 class="card-title">IOTA</h5>
+                                <h5 class="card-title">Office of Translational Research</h5>
                                 <p class="card-text">
                                     The Office of Translational Research (OTR) will play a pivotal role in advancing
                                     technology
@@ -1368,7 +1368,17 @@
                 overflow: hidden;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
                 height: 100%;
-                padding: 10px;
+                /* padding: 12px; */
+                display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+                /* 
+                 */
+                 /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch; */
             }
 
             .application-card:hover {
@@ -1389,42 +1399,42 @@
             .card-title {
                 color: #b5482d;
                 font-weight: bold;
-                margin-bottom: 15px;
-                white-space: nowrap;
-                overflow: hidden;
+                /* margin-bottom: 15px; */
+                /* white-space: nowrap;
+                overflow: hidden; */
                 /* Hides overflowing content */
-                text-overflow: ellipsis;
+                /* text-overflow: ellipsis; */
                 /* Adds '...' at the end */
-                width: 100%;
+                /* width: 100%; */
             }
 
             .card-text {
                 color: #555;
                 font-size: 14px;
-                margin-bottom: 15px;
-                display: -webkit-box;
+                /* margin-bottom: 15px; */
+                /* display: -webkit-box; */
 
-                -webkit-box-orient: vertical;
+                /* -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-height: 3em;
+                max-height: 3em; */
 
-                line-height: 1.5em;
+                /* line-height: 1.5em; */
                 /* Ensures two lines */
-                width: 100%;
+                /* width: 100%; */
                 /* Responsive width */
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
+                /* display: -webkit-box;
+                -webkit-line-clamp: 2; */
                 /* Always take two lines */
-                -webkit-box-orient: vertical;
+                /* -webkit-box-orient: vertical;
                 overflow: hidden;
-                text-overflow: ellipsis;
-                min-height: 3em;
+                text-overflow: ellipsis; */
+                /* min-height: 3em; */
                 /* Ensures two lines space */
 
-                line-height: 1.5em;
+                /* line-height: 1.5em; */
                 /* Adjust for exact two lines */
-                width: 100%;
+                /* width: 100%; */
             }
 
             .funding-badge {
